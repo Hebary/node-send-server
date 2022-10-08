@@ -22,7 +22,7 @@ dbConnection();
 const corsCfg = {
     origin: process.env.FRONT_URL,
 }
-app.use(cors(corsCfg));
+app.use(cors());
 
 app.use( express.static('uploads') );
 //PORT
